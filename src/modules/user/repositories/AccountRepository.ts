@@ -22,8 +22,8 @@ class AccountRepository extends Repository<Account> {
       Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000,
     );
 
-    const accountSid = process.env.SMS_SID;
-    const authToken = process.env.SMS_TOKEN;
+    const accountSid = 'AC7ae57582e89ca0b8a6b1f4de0a2439b6';
+    const authToken = '0214b8c85cb28781172cfee5bb66a57b';
     const client = require('twilio')(accountSid, authToken);
 
     const findAccount = await this.findOne({
