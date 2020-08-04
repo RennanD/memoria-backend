@@ -19,7 +19,9 @@ class ListContactUserService {
 
     const serializaredContacts = contacts.map(contact => ({
       ...contact,
-      avatar: contact.avatar ? `${process.env.APP_URL}/${contact.avatar}` : '',
+      avatar: contact.avatar
+        ? `${process.env.APP_URL}/${contact.avatar}`
+        : `${process.env.APP_AVATAR}`,
     }));
 
     return serializaredContacts;

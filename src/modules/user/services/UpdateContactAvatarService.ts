@@ -44,7 +44,9 @@ class UpdateContactAvatarService {
 
     return {
       ...contact,
-      avatar: contact.avatar ? `${process.env.APP_URL}/${contact.avatar}` : '',
+      avatar: contact.avatar
+        ? `${process.env.APP_URL}/${contact.avatar}`
+        : `${process.env.APP_AVATAR}`,
     };
   }
 }

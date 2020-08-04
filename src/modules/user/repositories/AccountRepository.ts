@@ -1,6 +1,6 @@
 /* eslint-disable global-require */
 /* eslint-disable @typescript-eslint/no-var-requires */
-
+import 'dotenv';
 import { EntityRepository, Repository } from 'typeorm';
 
 import Account from '../models/Account';

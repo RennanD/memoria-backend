@@ -46,7 +46,7 @@ class UpdateUserAvatarService {
       ...userExists,
       avatar: userExists.avatar
         ? `${process.env.APP_URL}/${userExists.avatar}`
-        : '',
+        : `${process.env.APP_AVATAR}`,
     };
   }
 }

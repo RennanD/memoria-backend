@@ -15,10 +15,6 @@ interface Request {
   password: string;
 }
 
-interface SerialiazedAccount extends Account {
-  avatar_url: string | undefined;
-}
-
 interface Session {
   token: string;
   account: Account;
@@ -68,7 +64,7 @@ class AuthenticateUserService {
 
     checkAccount.user.avatar = checkAccount.user.avatar
       ? `${process.env.APP_URL}/${checkAccount.user.avatar}`
-      : '';
+      : `${process.env.APP_AVATAR}`;
 
     return {
       account: checkAccount,

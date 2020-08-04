@@ -1,7 +1,7 @@
 node_modules
 *-error.log
 .env
-ormconfi.json
+ormconfig.json
 tmp/*
 !tmp/.gitkeep
 dist/
