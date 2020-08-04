@@ -1,0 +1,6 @@
+node_modules
+*-error.log
+.env
+ormconfi.json
+tmp/*
+!tmp/.gitkeep
