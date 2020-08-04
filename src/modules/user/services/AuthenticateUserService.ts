@@ -67,7 +67,7 @@ class AuthenticateUserService {
     });
 
     checkAccount.user.avatar = checkAccount.user.avatar
-      ? `http://192.168.25.9:3333/files/${checkAccount.user.avatar}`
+      ? `${process.env.APP_URL}/${checkAccount.user.avatar}`
       : '';
 
     return {

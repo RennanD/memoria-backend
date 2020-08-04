@@ -1,10 +1,9 @@
 {
-  "name": "default",
   "type": "postgres",
-  "host": "drona.db.elephantsql.com",
+  "host": "localhost",
   "port": 5432,
-  "username": "jtplntxf",
-  "password": "JRNziY4psgrIDSZHrH2zOzcUcUpqro1y",
+  "username": "docker",
+  "password": "docker",
   "database": "app_memoria",
   "migrations": [
     "./src/database/migrations/*.ts"
@@ -16,4 +15,3 @@
     "migrationsDir": "./src/database/migrations"
   }
 }
-

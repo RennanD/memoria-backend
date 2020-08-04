@@ -10,8 +10,6 @@ class CreatePreferenceServices {
       category,
     });
 
-    // console.log(checkCategory);
-
     if (checkCategory) {
       throw new AppError('Esta categoria já foi cadastrada.');
     }

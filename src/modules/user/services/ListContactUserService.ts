@@ -19,9 +19,7 @@ class ListContactUserService {
 
     const serializaredContacts = contacts.map(contact => ({
       ...contact,
-      avatar: contact.avatar
-        ? `http://192.168.25.9:3333/files/${contact.avatar}`
-        : '',
+      avatar: contact.avatar ? `${process.env.APP_URL}/${contact.avatar}` : '',
     }));
 
     return serializaredContacts;

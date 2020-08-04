@@ -4,3 +4,4 @@ node_modules
 ormconfi.json
 tmp/*
 !tmp/.gitkeep
+dist/

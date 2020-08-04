@@ -1,3 +1,4 @@
+import 'dotenv';
 import 'reflect-metadata';
 
 import express from 'express';
@@ -25,8 +26,7 @@ app.use(appErrors);
 
 app.use('/files', express.static(resolve(__dirname, '..', 'tmp')));
 
-cron.schedule('9 19 * * *', async () => {
-  console.log('hora da verdade');
+cron.schedule('0 6 * * *', async () => {
   await getReminders();
 });
 

@@ -45,7 +45,7 @@ class UpdateUserAvatarService {
     return {
       ...userExists,
       avatar: userExists.avatar
-        ? `http://192.168.25.9:3333/files/${userExists.avatar}`
+        ? `${process.env.APP_URL}/${userExists.avatar}`
         : '',
     };
   }
