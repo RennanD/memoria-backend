@@ -1,7 +1,7 @@
 {
   "name": "default",
   "type": "postgres",
-  "host": "postgres://jtplntxf:JRNziY4psgrIDSZHrH2zOzcUcUpqro1y@drona.db.elephantsql.com:5432/jtplntxf",
+  "host": "drona.db.elephantsql.com",
   "port": 5432,
   "username": "jtplntxf",
   "password": "JRNziY4psgrIDSZHrH2zOzcUcUpqro1y",
